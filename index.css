@@ -1,18 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: linear-gradient(to right bottom, #83cdff, #f0b3ff);
+  background: linear-gradient(to right, #7ae0ff, #db4cff);
   height: 100vh;
   width: 100%;
+  background-attachment: scroll;
+}
+
+.choosingPanel {
   color: white;
   text-shadow: 1px 1px 5px #fff;
   text-align: center;
 }
-
-.ray {
+.choosingPanel h1 {
+  margin: auto;
+  padding: 30px;
   width: 80%;
-  height: 30px;
-  background: white;
-  margin-left: auto;
-  margin-right: auto;
-  color: black;
+  margin-bottom: 120px;
+  margin-top: 80px;
+  font-size: 50px;
+  background: rgba(255, 133, 255, 0.2666666667);
+}
+
+.choose {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card1 {
+  width: 30%;
+  cursor: pointer;
+}
+.card1 img {
+  width: 40%;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.card1 h2 {
+  font-size: 40px;
+  color: #c1daff;
+  text-shadow: 1px 1px 5px #3be2ff;
+}
+.card1 p {
+  font-size: 20px;
+  background: #69d5ff;
+  padding: 20px;
+  margin: 10px;
+}
+
+.card2 {
+  width: 30%;
+  cursor: pointer;
+}
+.card2 img {
+  width: 40%;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.card2 h2 {
+  font-size: 40px;
+  color: #af1896;
+  text-shadow: 1px 1px 5px #af1896;
+}
+.card2 p {
+  background: rgba(155, 20, 99, 0.5960784314);
+  padding: 20px;
+  margin: 10px;
+}
+
+.card1:hover img {
+  width: 50%;
+  box-shadow: -10px 10px 15px #ff498f;
+}
+.card1:hover #p1 {
+  display: block;
+}
+
+.card2:hover img {
+  width: 50%;
+  box-shadow: 10px 10px 15px #00794a;
+}
+.card2:hover #p2 {
+  display: block;
+}
+
+#p1 {
+  display: none;
+}
+
+#p2 {
+  display: none;
+}
+
+.finn {
+  display: none;
+}
+.finn h1 {
+  color: #ffffff;
+  background: rgba(0, 247, 255, 0.4745098039);
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
   text-align: center;
+  padding: 30px;
+}
+.finn img {
+  width: 500px;
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+}
+.finn p {
+  font-size: 30px;
+  color: white;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.jake {
+  display: none;
+}
+.jake h1 {
+  color: #ffffff;
+  background: rgba(88, 0, 51, 0.7254901961);
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  padding: 30px;
+}
+.jake img {
+  width: 600px;
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+}
+.jake p {
+  font-size: 30px;
+  color: white;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .choosingPanel h1 {
+    font-size: 40px;
+  }
+  .card1 h2 {
+    font-size: 30px;
+  }
+  .card1 img {
+    width: 70%;
+  }
+  .card1:hover img {
+    width: 80%;
+  }
+  .card2 h2 {
+    font-size: 30px;
+  }
+  .card2 img {
+    width: 70%;
+  }
+  .card2:hover img {
+    width: 80%;
+  }
+  .finn h1 {
+    width: 80%;
+  }
+  .finn img {
+    width: 80%;
+  }
+  .finn p {
+    font-size: 20px;
+  }
+  .jake h1 {
+    width: 80%;
+  }
+  .jake img {
+    width: 80%;
+  }
+  .jake p {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=index.css.map */

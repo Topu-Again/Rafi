@@ -6,11 +6,37 @@
 </head>
 <body>
 
-<h1>Hello world!</h1>
-<p>This is the first file in my new Git Repo.</p>
-<h2>This is the second heading</h2>
-<img src="goofy-ahh-goofy-ahh-pictures.gif" alt="">
-<div class="ray">-Pagla Barut</div>
+    <div id="choosingPanel" class="choosingPanel">
+        <h1>Choose Your Character Wisely!</h1>
 
+        <div class="choose">
+            <div class="card1" onclick="finn()">
+                <h2>Finn The Human</h2>
+                <img src="finn.jpg" alt="">
+                <p id="p1">Choosing to be ordinary... Boring!</p>
+            </div>
+        
+
+            <div class="card2" onclick="jake()">
+                <h2>Jake The Dog</h2>
+                <img src="jake.jpg" alt="">
+                <p id="p2">Choosing magic!... Smells like adventure...</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="finn" class="finn">
+        <h1>You Have Chosen Finn!!</h1>
+        <img src="finnchoose.jpg" alt="">
+        <p>You have chosen to be lucky!!! Finn’s personality is simple but powerful: he wants to do what’s right, protect people, and prove himself as a true hero. He often rushes into danger without thinking too much, which sometimes gets him into trouble—but also makes him fearless.</p>
+    </div>
+    <div id="jake" class="jake">
+        <h1>You Have Chosen Jake!!</h1>
+        <img src="jakechoose.jpg" alt="">
+        <p>You have chosen to be wise!!! Personality-wise, Jake is much more relaxed than Finn. He’s chill, humorous, and often prefers taking life easy instead of stressing about hero duties. He likes music, food, lounging around, and giving slightly goofy but surprisingly wise advice.</p>
+    </div>
+
+<script src="index.js"></script>
 </body>
 </html>
